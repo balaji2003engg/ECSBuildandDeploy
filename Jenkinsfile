@@ -12,12 +12,12 @@ node {
   }
  
   stage ('Docker build'){
-     sh 'sudo docker build -t demo:latest .'
-     sh 'sudo docker tag demo:latest 046903855004.dkr.ecr.us-east-1.amazonaws.com/demo:latest'
+     sh 'sudo docker build -t hdemo:latest .'
+     sh 'sudo docker tag demo:latest 046903855004.dkr.ecr.us-east-1.amazonaws.com/hdemo:latest'
   }
   
   stage ('Docker push'){
-     sh 'sudo docker push 046903855004.dkr.ecr.us-east-1.amazonaws.com/demo:latest'
+     sh 'sudo docker push 046903855004.dkr.ecr.us-east-1.amazonaws.com/hdemo:latest'
   }
   stage (' Deploy to ECS' ){
      
