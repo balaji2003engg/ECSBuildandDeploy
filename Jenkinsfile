@@ -21,7 +21,7 @@ node {
   }
   stage (' Deploy to ECS' ){
      
-      sh 'sudo aws ecs update-service --cluster Hdemo  --service Demoservice --force-new-deployment --region us-east-1'
+      sh 'sudo aws ecs update-service --cluster hdemo1  --service hsdemo1 --force-new-deployment --region us-east-1'
       
   
   }
