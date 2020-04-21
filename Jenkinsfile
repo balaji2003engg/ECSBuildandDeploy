@@ -13,7 +13,7 @@ node {
  
   stage ('Docker build'){
      sh 'sudo docker build -t hdemo:latest .'
-     sh 'sudo docker tag demo:latest 046903855004.dkr.ecr.us-east-1.amazonaws.com/hdemo:latest'
+     sh 'sudo docker tag hdemo:latest 046903855004.dkr.ecr.us-east-1.amazonaws.com/hdemo:latest'
   }
   
   stage ('Docker push'){
