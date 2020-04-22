@@ -1,6 +1,6 @@
 # ECSBuildandDeploy
 
-Build and Deploy to the ECS
+Build and update the docker image in the ECS 
 
 1. Create the ECR repo
 2.Create the ECS cluster fargate and service with task 
